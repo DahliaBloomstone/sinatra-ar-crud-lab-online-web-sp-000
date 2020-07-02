@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html>
-  <body>
-    <h1>Articles</h1>
-    <% @articles.each do |article| %>
-      <strong><%= article.name %></strong><br />
-      <%= article.content %>
-      <br /><br />
-    <% end %>
-  </body>
-</html>
+<% @articles.each do |article|%>
+<a href="/articles/<%=article.id%>"><h1><%= article.title%></h1></a>
+<%end%>
